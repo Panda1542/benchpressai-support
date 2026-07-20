@@ -1,487 +1,643 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BenchPress AI Support, Privacy Policy & Terms</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BenchPress AI support information, privacy policy, and terms of use.">
+  <title>BenchPress AI Support, Privacy Policy &amp; Terms</title>
   <style>
+    :root {
+      color-scheme: dark;
+      --background: #070b10;
+      --surface: #111820;
+      --surface-alt: #0c131a;
+      --border: #22303d;
+      --text: #ffffff;
+      --muted: #d0d6dd;
+      --subtle: #9da6af;
+      --accent: #32e68b;
+      --notice-background: #15110c;
+      --notice-border: #6b4318;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #070b10;
-      color: #ffffff;
       margin: 0;
-      padding: 40px 20px;
+      padding: 40px 20px 64px;
+      background: var(--background);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 17px;
       line-height: 1.65;
     }
 
-```
-.container {
-  max-width: 900px;
-  margin: auto;
-}
+    .container {
+      width: 100%;
+      max-width: 920px;
+      margin: 0 auto;
+    }
 
-h1 {
-  color: #32e68b;
-  font-size: 42px;
-  margin-bottom: 10px;
-  line-height: 1.15;
-}
+    h1,
+    h2,
+    h3 {
+      line-height: 1.2;
+    }
 
-h2 {
-  margin-top: 42px;
-  color: #ffffff;
-  font-size: 28px;
-}
+    h1 {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: clamp(34px, 6vw, 46px);
+    }
 
-h3 {
-  margin-top: 28px;
-  color: #ffffff;
-  font-size: 21px;
-}
+    h2 {
+      margin: 42px 0 14px;
+      color: var(--text);
+      font-size: 28px;
+    }
 
-p, li {
-  color: #d0d6dd;
-  font-size: 17px;
-}
+    h3 {
+      margin: 28px 0 10px;
+      color: var(--text);
+      font-size: 21px;
+    }
 
-a {
-  color: #32e68b;
-  word-break: break-word;
-}
+    p,
+    li {
+      color: var(--muted);
+    }
 
-ul {
-  padding-left: 24px;
-}
+    a {
+      color: var(--accent);
+      overflow-wrap: anywhere;
+    }
 
-.card {
-  background: #111820;
-  border: 1px solid #22303d;
-  border-radius: 18px;
-  padding: 24px;
-  margin-top: 24px;
-}
+    ul {
+      padding-left: 24px;
+    }
 
-.notice {
-  background: #15110c;
-  border: 1px solid #6b4318;
-  border-radius: 18px;
-  padding: 24px;
-  margin-top: 24px;
-}
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin: 24px 0 8px;
+      padding: 16px 18px;
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+    }
 
-.small {
-  font-size: 14px;
-  color: #9da6af;
-}
+    nav a {
+      font-weight: 650;
+      text-decoration: none;
+    }
 
-.brand {
-  color: #32e68b;
-  font-weight: 700;
-}
+    nav a:hover,
+    nav a:focus {
+      text-decoration: underline;
+    }
 
-hr {
-  border: none;
-  border-top: 1px solid #22303d;
-  margin: 42px 0;
-}
-```
+    .card,
+    .notice {
+      margin-top: 24px;
+      padding: 24px;
+      border-radius: 18px;
+    }
 
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+
+    .notice {
+      background: var(--notice-background);
+      border: 1px solid var(--notice-border);
+    }
+
+    .card h2,
+    .notice h2 {
+      margin-top: 0;
+    }
+
+    .small {
+      color: var(--subtle);
+      font-size: 14px;
+    }
+
+    .brand,
+    .strong {
+      color: var(--accent);
+      font-weight: 750;
+    }
+
+    .section-divider {
+      margin: 48px 0;
+      border: 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .legal-links {
+      display: grid;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 28px 16px 48px;
+      }
+
+      .card,
+      .notice {
+        padding: 20px;
+      }
+    }
   </style>
 </head>
-
 <body>
-  <div class="container">
-    <h1>BenchPress AI Support</h1>
-    <p class="small">Last updated: June 8, 2026</p>
+  <main class="container">
+    <header>
+      <h1>BenchPress AI Support</h1>
+      <p class="small">Effective and last updated: July 17, 2026</p>
+      <p>
+        <span class="brand">BenchPress AI</span> is a bench press tracking app that provides rep counting,
+        on-device movement analysis, workout history, ranks, leaderboards, and training progress.
+      </p>
 
-```
-<p>
-  <span class="brand">BenchPress AI</span> is a bench press tracking app designed to help users monitor reps,
-  bar movement, workout history, ranks, leaderboards, and training progress.
-</p>
+      <nav aria-label="Page sections">
+        <a href="#support">Support</a>
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms &amp; Conditions</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a>
+      </nav>
+    </header>
 
-<div class="card">
-  <h2>Support</h2>
-  <p>
-    For support, questions, feedback, privacy requests, account/data requests, or bug reports, contact us at:
-  </p>
-  <p>
-    <a href="mailto:etavakoli818@gmail.com">etavakoli818@gmail.com</a>
-  </p>
-  <p>
-    Please include the device model, iOS version, app version, and a description of the issue so we can help faster.
-  </p>
-</div>
+    <section id="support" class="card">
+      <h2>Support</h2>
+      <p>
+        For support, feedback, privacy requests, data-access requests, deletion requests, or bug reports, contact:
+      </p>
+      <p>
+        <a href="mailto:etavakoli818@gmail.com">etavakoli818@gmail.com</a>
+      </p>
+      <p>
+        When reporting a bug, include your device model, iOS version, app version, and a description of the issue.
+        Send screenshots or files only when you choose to do so.
+      </p>
+    </section>
 
-<div class="notice">
-  <h2>Important Safety Notice</h2>
-  <p>
-    BenchPress AI is a fitness tracking and training feedback tool. It is not a medical device, physical therapy
-    device, injury prevention system, professional coaching replacement, or emergency safety system.
-  </p>
-  <p>
-    Bench pressing and weightlifting involve risk of serious injury, including muscle strains, joint injuries,
-    dropped weights, crushing injuries, and other harm. Always use proper equipment, safety arms, collars where
-    appropriate, and a qualified spotter when lifting heavy weight.
-  </p>
-  <p>
-    You are responsible for deciding whether you are physically able to exercise and whether your training setup is
-    safe. Stop using the app and stop exercising if you feel pain, dizziness, shortness of breath, numbness, unusual
-    discomfort, or any other concerning symptom. Consult a qualified healthcare professional before beginning or
-    changing an exercise program.
-  </p>
-</div>
+    <section class="notice" aria-labelledby="privacy-summary-title">
+      <h2 id="privacy-summary-title">Important Privacy Summary</h2>
+      <p>
+        Camera frames are analyzed locally on your device using Apple's AVFoundation, Vision, and Core ML
+        frameworks. BenchPress AI does not use a third-party AI service. Raw camera frames, photos, videos,
+        body-pose landmarks, and form-analysis results are not sent to OpenAI, ChatGPT, Google Gemini,
+        Anthropic Claude, or any other external AI provider.
+      </p>
+      <p>
+        Apple CloudKit is optional. Before any CloudKit sharing begins, the app identifies the data involved and
+        asks for explicit permission. You may continue without iCloud.
+      </p>
+    </section>
 
-<div class="card">
-  <h2>How to Use BenchPress AI</h2>
-  <p>
-    Place your iPhone behind your head on a stable tripod or secure mount with a clear view of the bench press
-    movement. Start a set inside the app and allow the app to analyze bench press motion using the camera.
-  </p>
-  <p>
-    For best results, use good lighting, keep the phone stable, avoid blocking the camera view, and make sure the
-    bench, bar, plates, and upper body are visible. Tracking accuracy can vary depending on lighting, camera angle,
-    body position, clothing, equipment, and device performance.
-  </p>
-</div>
+    <section class="notice" aria-labelledby="safety-title">
+      <h2 id="safety-title">Important Safety Notice</h2>
+      <p>
+        BenchPress AI is a fitness tracking and training feedback tool. It is not a medical device, physical
+        therapy device, injury-prevention system, professional coaching replacement, spotter, or emergency safety
+        system.
+      </p>
+      <p>
+        Bench pressing and weightlifting involve a risk of serious injury. Always use appropriate equipment,
+        safety arms or pins, collars where appropriate, and a qualified spotter for heavy lifts. Stop exercising
+        and seek appropriate help if you feel pain, dizziness, shortness of breath, numbness, unusual discomfort,
+        or another concerning symptom.
+      </p>
+    </section>
 
-<hr />
+    <hr class="section-divider">
 
-<h1>Privacy Policy</h1>
+    <section id="privacy">
+      <h1>Privacy Policy</h1>
+      <p>
+        This Privacy Policy explains what BenchPress AI processes or collects, how the information is obtained,
+        why it is used, where it is stored, when it is shared, and the choices available to users.
+      </p>
 
-<p>
-  This Privacy Policy explains how BenchPress AI collects, uses, stores, and protects information when you use the
-  app, website, support services, and related features.
-</p>
+      <h2>1. On-Device Camera and Computer-Vision Processing</h2>
+      <p>
+        BenchPress AI requests camera permission so it can analyze bench press movement, count repetitions,
+        estimate bar path and speed, evaluate tilt or balance, and generate workout feedback.
+      </p>
+      <p>
+        Live camera frames are analyzed locally on the user's device using Apple's AVFoundation, Vision, and Core ML
+        frameworks. Raw camera frames, photos, videos, body-pose landmarks, and form-analysis results are not sent
+        to the BenchPress AI developer, OpenAI, ChatGPT, Google Gemini, Anthropic Claude, or any other third-party
+        AI service.
+      </p>
+      <p>
+        <strong>BenchPress AI does not use a third-party AI service.</strong> The word "AI" in the app name refers
+        to automated on-device computer-vision analysis.
+      </p>
+      <p>
+        Raw live camera data is not retained after analysis unless the user deliberately creates or exports a
+        highlight, screenshot, or saved posture snapshot through an app feature. User-created exports remain under
+        the user's control and are shared only when the user chooses to share them.
+      </p>
 
-<h2>1. Information We May Collect</h2>
+      <h2>2. Workout and Performance Data</h2>
+      <p>The app may create and store workout information such as:</p>
+      <ul>
+        <li>Weight</li>
+        <li>Repetition count</li>
+        <li>Workout date and time</li>
+        <li>Total volume</li>
+        <li>Estimated one-repetition maximum</li>
+        <li>Bar speed and bar path</li>
+        <li>Bar tilt and balance feedback</li>
+        <li>Form or grind scores</li>
+        <li>Ranks, streaks, progress, rewards, packs, or cards</li>
+        <li>Session reports and saved posture snapshots</li>
+      </ul>
+      <p>
+        This information is used to provide workout tracking, reports, history, progress, ranks, rewards, and
+        related app features. It is stored locally on the device unless the user separately gives permission to
+        enable Apple CloudKit features.
+      </p>
 
-<h3>Camera Access</h3>
-<p>
-  BenchPress AI requests access to your device camera so the app can track bench press movement, reps, bar path,
-  bar speed, tilt, balance, and workout feedback. Camera access is required for the core tracking feature.
-</p>
-<p>
-  Unless a feature clearly says otherwise, camera processing is intended to be used for workout tracking and motion
-  analysis. The app is not intended to secretly record you. Do not use the app in situations where other people may
-  be recorded without their knowledge or consent.
-</p>
+      <h2>3. Optional Apple iCloud and CloudKit</h2>
+      <p>
+        Apple CloudKit is the only optional cloud service used by BenchPress AI. CloudKit is not required to use
+        the app's local workout features.
+      </p>
+      <p>
+        Before CloudKit is enabled, the app displays the exact data involved and requires the user to select an
+        explicit permission checkbox. The user may instead select <strong>Continue without iCloud</strong>.
+      </p>
 
-<h3>Workout and Performance Data</h3>
-<p>
-  The app may collect or store workout-related information such as:
-</p>
-<ul>
-  <li>Bench press weight</li>
-  <li>Repetition count</li>
-  <li>Workout date and time</li>
-  <li>Total volume</li>
-  <li>Estimated one-rep max</li>
-  <li>Bar speed</li>
-  <li>Bar tilt</li>
-  <li>Balance or form-related feedback</li>
-  <li>Workout score or grind score</li>
-  <li>Rank, streak, progress, rewards, packs, or cards</li>
-  <li>Leaderboard display information</li>
-</ul>
+      <h3>Data sent to the user's private Apple CloudKit database after permission</h3>
+      <ul>
+        <li>Workout sessions and history</li>
+        <li>Saved posture snapshots contained in session history</li>
+        <li>Progress data, owned reward cards, unopened packs, and rank state</li>
+        <li>
+          A trial/access ledger containing free reps used, sample completion time, prior verified Pro access,
+          clock-integrity information, and update timestamps
+        </li>
+        <li>
+          The user's CloudKit record identifier, used to associate private records with the user's Apple Account
+        </li>
+      </ul>
+      <p>
+        The private database is used for cross-device sync and recovery. Private CloudKit data is not displayed to
+        other BenchPress AI users.
+      </p>
 
-<h3>Leaderboard and Profile Data</h3>
-<p>
-  If you use leaderboard, rank, cloud sync, or competitive features, the app may store and display information such
-  as your chosen username, rank, score, volume, estimated strength metrics, streak, form score, and other workout
-  statistics. Leaderboard information may be visible to other users.
-</p>
-<p>
-  Do not use your real name, sensitive personal information, or private information as your public username.
-</p>
+      <h3>Data sent to the app's public Apple CloudKit database after permission</h3>
+      <ul>
+        <li>The user's chosen leaderboard display name</li>
+        <li>Rank and score</li>
+        <li>Streak</li>
+        <li>Total repetitions</li>
+        <li>Best or heaviest weight</li>
+        <li>Estimated one-repetition maximum</li>
+        <li>Total volume</li>
+        <li>Form score</li>
+        <li>Set or session count</li>
+        <li>Update time</li>
+      </ul>
+      <p>
+        Public leaderboard information can be seen by other BenchPress AI users. Users should not use a real name,
+        sensitive personal information, or other private information as a leaderboard display name.
+      </p>
 
-<h3>Device and App Information</h3>
-<p>
-  We may receive basic technical information related to app performance, crashes, diagnostics, device type, operating
-  system version, app version, and usage events. This information is used to maintain, debug, secure, and improve the
-  app.
-</p>
+      <h3>Data never uploaded to CloudKit</h3>
+      <ul>
+        <li>Raw live camera frames</li>
+        <li>Raw workout video</li>
+        <li>Apple Account password</li>
+      </ul>
+      <p>
+        Apple processes CloudKit information under Apple's privacy, security, and service terms. BenchPress AI
+        relies on Apple to provide privacy and security protections at least equivalent to the protections described
+        in this policy for data handled through CloudKit.
+      </p>
 
-<h3>Support Communications</h3>
-<p>
-  If you contact support by email, we may collect your email address, your message, screenshots or files you choose
-  to send, and any information needed to respond to your request.
-</p>
+      <h2>4. Local Device Storage and Keychain</h2>
+      <p>
+        Workout history and app settings may be stored locally on the device. The app also stores a limited
+        trial/access ledger in the iOS Keychain to prevent repeated use of one-time free access. This ledger may
+        include free reps used, the sample completion time, prior verified Pro access, clock-integrity information,
+        and update timestamps.
+      </p>
+      <p>
+        Keychain information can remain after a normal app deletion. If the user enables iCloud, the trial/access
+        ledger may also be stored in the user's private CloudKit database for recovery across devices or reinstalls.
+      </p>
 
-<h2>2. How We Use Information</h2>
-<p>
-  We may use information to:
-</p>
-<ul>
-  <li>Provide bench press tracking and workout feedback</li>
-  <li>Count reps and analyze movement</li>
-  <li>Save workout history and progress</li>
-  <li>Operate ranks, streaks, leaderboards, reward packs, and cards</li>
-  <li>Sync or restore user data where supported</li>
-  <li>Improve app accuracy, performance, and reliability</li>
-  <li>Respond to support requests</li>
-  <li>Debug crashes, fix bugs, and prevent misuse</li>
-  <li>Comply with legal obligations and App Store requirements</li>
-</ul>
+      <h2>5. Subscriptions and Purchase Status</h2>
+      <p>
+        Purchases are processed by Apple through the App Store and StoreKit. BenchPress AI does not receive the
+        user's full payment-card number.
+      </p>
+      <p>
+        The app checks Apple StoreKit subscription entitlement and verified transaction history to unlock Pro
+        features, restore purchases, and determine whether prior free or Pro access has been used. A limited
+        purchase/access status may be included in the private CloudKit trial/access ledger when the user has enabled
+        iCloud.
+      </p>
 
-<h2>3. Camera Data and Workout Analysis</h2>
-<p>
-  Camera access is used to analyze bench press movement. Tracking results may be inaccurate or incomplete. The app
-  may fail to detect reps, miscount reps, misread movement, or provide incorrect feedback. BenchPress AI should not
-  be relied on as your only method of safety, coaching, or injury prevention.
-</p>
-<p>
-  You should review your own form, use common sense, and seek qualified coaching when needed. Never continue a lift
-  because the app tells you to continue. Your safety decisions are your responsibility.
-</p>
+      <h2>6. Support Communications</h2>
+      <p>
+        When a user contacts support, the developer receives the email address, message, and any screenshots or files
+        that the user voluntarily sends. This information is used to respond to the request, investigate problems,
+        handle privacy or deletion requests, and maintain appropriate support or legal records.
+      </p>
 
-<h2>4. Third-Party Services</h2>
-<p>
-  BenchPress AI may use Apple services such as the App Store, In-App Purchases, iCloud, CloudKit, Game Center, or
-  Apple-provided diagnostics depending on the features enabled in the app. These services may process information
-  according to Apple's own terms and privacy policies.
-</p>
-<p>
-  We do not sell your personal information. We do not allow third parties to use your personal information for
-  cross-app advertising tracking without any required consent.
-</p>
+      <h2>7. Device Information, Diagnostics, Advertising, and Tracking</h2>
+      <p>
+        The app does not include third-party advertising, cross-app tracking, or third-party analytics SDKs.
+        BenchPress AI does not sell personal information.
+      </p>
+      <p>
+        Apple may process App Store, purchase, crash, or device diagnostics according to the user's Apple settings
+        and Apple's own policies. BenchPress AI may receive information made available by Apple to developers for app
+        operation, purchase verification, crash investigation, or App Store administration.
+      </p>
 
-<h2>5. Subscriptions and Purchases</h2>
-<p>
-  If the app offers subscriptions, trials, or paid features, purchases are processed by Apple through the App Store.
-  We do not receive your full payment card number. Subscription management, cancellation, billing, refunds, and
-  payment issues are handled through your Apple ID and App Store account settings.
-</p>
+      <h2>8. How Information Is Used</h2>
+      <p>Information is used only as needed to:</p>
+      <ul>
+        <li>Provide on-device bench press analysis and workout feedback</li>
+        <li>Count reps and generate workout metrics</li>
+        <li>Save local workout history and progress</li>
+        <li>Provide optional cross-device sync through private Apple CloudKit</li>
+        <li>Operate the optional public leaderboard</li>
+        <li>Manage ranks, streaks, rewards, packs, and cards</li>
+        <li>Verify subscriptions and restore purchases</li>
+        <li>Prevent repeated trial or sample abuse</li>
+        <li>Respond to support and privacy requests</li>
+        <li>Maintain security, reliability, and legal compliance</li>
+      </ul>
 
-<h2>6. Data Retention</h2>
-<p>
-  Workout history, leaderboard data, profile information, and app settings may be stored for as long as needed to
-  provide app features, maintain your progress, comply with legal obligations, resolve disputes, prevent abuse, and
-  improve the app.
-</p>
-<p>
-  Support emails may be retained for customer service, security, and legal recordkeeping purposes.
-</p>
+      <h2>9. Data Sharing</h2>
+      <p>
+        <strong>BenchPress AI does not share personal data with a third-party AI service.</strong>
+      </p>
+      <p>
+        When the user explicitly enables iCloud, the app shares the specific private and public data listed in
+        Section 3 with Apple CloudKit. Public leaderboard data is also visible to other BenchPress AI users.
+        Information may additionally be disclosed when required by law, necessary to protect users or the service,
+        or necessary to respond to a valid legal request.
+      </p>
 
-<h2>7. Data Deletion Requests</h2>
-<p>
-  You may request deletion of personal data associated with your use of BenchPress AI by contacting:
-  <a href="mailto:etavakoli818@gmail.com">etavakoli818@gmail.com</a>.
-</p>
-<p>
-  Please include enough information for us to identify the data you want deleted. We may need to verify your request
-  before deleting data. Some information may be retained if required for legal, security, fraud prevention, accounting,
-  App Store, or dispute-resolution purposes.
-</p>
+      <h2>10. Data Retention</h2>
+      <p>
+        Local workout history remains until the user deletes it, resets the app data, or removes it through available
+        app controls.
+      </p>
+      <p>
+        Private CloudKit information may remain while iCloud sync is enabled and until it is deleted through the app,
+        the user's Apple Account or iCloud controls where available, or a verified deletion request.
+      </p>
+      <p>
+        Public leaderboard information may remain until it is replaced, removed, or deleted following a verified
+        request. Trial/access information may be retained as reasonably necessary to enforce one-time access and
+        prevent abuse. Support emails may be retained for customer service, security, dispute resolution, and legal
+        recordkeeping.
+      </p>
 
-<h2>8. Your Choices</h2>
-<p>
-  You can control camera permission through iOS Settings. If camera access is disabled, the main workout tracking
-  feature may not work.
-</p>
-<p>
-  You can manage subscriptions, trials, and purchases through your Apple ID subscription settings.
-</p>
-<p>
-  You can contact us to request access, correction, or deletion of certain information where applicable.
-</p>
+      <h2>11. User Choices and Permission</h2>
+      <p>Users can:</p>
+      <ul>
+        <li>Deny or disable camera permission through iOS Settings, although core tracking will not function</li>
+        <li>Choose Continue without iCloud to avoid CloudKit sync and public leaderboard submission</li>
+        <li>Decline the CloudKit permission checkbox</li>
+        <li>Manage or cancel subscriptions through Apple Account subscription settings</li>
+        <li>Delete available workout history inside the app</li>
+        <li>
+          Request access, correction, or deletion by emailing
+          <a href="mailto:etavakoli818@gmail.com">etavakoli818@gmail.com</a>
+        </li>
+      </ul>
 
-<h2>9. Children's Privacy</h2>
-<p>
-  BenchPress AI is not intended for children under 13. We do not knowingly collect personal information from children
-  under 13. If you believe a child has provided personal information, contact us and we will take appropriate steps to
-  review and delete the information where required.
-</p>
+      <h2>12. Data Deletion Requests</h2>
+      <p>
+        To request deletion of a leaderboard entry or other identifiable app data, email
+        <a href="mailto:etavakoli818@gmail.com">etavakoli818@gmail.com</a>.
+      </p>
+      <p>
+        Include enough information to identify the relevant record. Verification may be required before deletion.
+        Certain information may be retained when reasonably necessary for legal compliance, security, fraud
+        prevention, payment disputes, or enforcement of one-time access.
+      </p>
 
-<h2>10. Security</h2>
-<p>
-  We use reasonable technical and organizational measures designed to protect information. However, no app, website,
-  device, network, or storage system can be guaranteed to be completely secure.
-</p>
+      <h2>13. Security</h2>
+      <p>
+        Reasonable technical and organizational measures are used to protect information. Local data uses iOS
+        storage and Keychain protections where implemented. Optional cloud data uses Apple CloudKit. No app, device,
+        network, or storage system can be guaranteed completely secure.
+      </p>
 
-<h2>11. International Users</h2>
-<p>
-  If you use BenchPress AI outside your country of residence, your information may be processed in locations where
-  our service providers, platform providers, or infrastructure providers operate. Data protection laws may differ from
-  those in your jurisdiction.
-</p>
+      <h2>14. Children and Age Requirement</h2>
+      <p>
+        BenchPress AI is intended for adults age 18 or the age of legal majority in their jurisdiction. The service
+        is not directed to children. If a parent or guardian believes a child has provided personal information,
+        contact the developer for review and deletion where appropriate.
+      </p>
 
-<h2>12. Changes to This Privacy Policy</h2>
-<p>
-  We may update this Privacy Policy from time to time. Updates will be posted on this page with a new "Last updated"
-  date. Your continued use of the app after changes are posted means you accept the updated policy, to the extent
-  permitted by law.
-</p>
+      <h2>15. International Users</h2>
+      <p>
+        Apple CloudKit and other Apple platform services may process information in locations where Apple or its
+        service providers operate. Data-protection laws may differ between jurisdictions.
+      </p>
 
-<hr />
+      <h2>16. Changes to This Privacy Policy</h2>
+      <p>
+        This Privacy Policy may be updated from time to time. Material changes may be presented in the app for renewed
+        acceptance. The updated date at the top identifies the current version.
+      </p>
 
-<h1>Terms & Conditions</h1>
+      <h2>17. Privacy Contact</h2>
+      <p>
+        For support, legal, privacy, access, correction, or deletion requests, contact
+        <a href="mailto:etavakoli818@gmail.com">etavakoli818@gmail.com</a>.
+      </p>
+    </section>
 
-<p>
-  These Terms & Conditions govern your access to and use of BenchPress AI. By downloading, accessing, or using the
-  app, you agree to these Terms. If you do not agree, do not use the app.
-</p>
+    <hr class="section-divider">
 
-<h2>1. Fitness and Safety Disclaimer</h2>
-<p>
-  BenchPress AI provides workout tracking, movement feedback, progress tracking, and motivational features. The app
-  does not provide medical advice, diagnosis, treatment, rehabilitation, physical therapy, emergency assistance, or
-  professional coaching services.
-</p>
-<p>
-  Weightlifting can be dangerous. You understand and agree that you use the app and perform exercises at your own
-  risk. You are responsible for using proper form, safe equipment, appropriate weights, collars where appropriate,
-  safety arms, a qualified spotter, and a safe training environment.
-</p>
-<p>
-  Do not use the app while attempting unsafe lifts, maximum attempts without proper safety measures, or exercises
-  beyond your ability. The app cannot prevent injury and cannot detect all dangerous situations.
-</p>
+    <section id="terms">
+      <h1>Terms &amp; Conditions</h1>
+      <p>
+        These Terms govern access to and use of BenchPress AI. By downloading, accessing, or using the app, the user
+        agrees to these Terms. A user who does not agree must not use the app.
+      </p>
 
-<h2>2. No Guarantee of Accuracy</h2>
-<p>
-  BenchPress AI may provide rep counts, bar speed, tilt, balance feedback, form feedback, rank, score, estimated one
-  rep max, and other metrics. These outputs are estimates and may be inaccurate, delayed, incomplete, or unavailable.
-</p>
-<p>
-  You agree not to rely solely on the app for training, safety, performance decisions, medical decisions, or
-  competition decisions. Always use your own judgment and consult qualified professionals when needed.
-</p>
+      <h2>1. Eligibility</h2>
+      <p>
+        Users must be at least 18 years old, or the age of legal majority where they live, to use BenchPress AI.
+      </p>
 
-<h2>3. User Responsibility</h2>
-<p>
-  You are responsible for:
-</p>
-<ul>
-  <li>Using the app safely and legally</li>
-  <li>Maintaining control of your device and equipment</li>
-  <li>Ensuring your phone or tripod does not create a hazard</li>
-  <li>Obtaining consent before recording or capturing other people</li>
-  <li>Choosing appropriate weights and training intensity</li>
-  <li>Stopping exercise if conditions become unsafe</li>
-  <li>Keeping your account, username, and device secure</li>
-</ul>
+      <h2>2. Fitness and Safety Disclaimer</h2>
+      <p>
+        BenchPress AI provides automated workout tracking, movement feedback, progress tracking, and motivational
+        features. It does not provide medical advice, diagnosis, treatment, rehabilitation, physical therapy,
+        emergency assistance, or professional coaching.
+      </p>
+      <p>
+        Weightlifting can be dangerous. Users perform exercises at their own risk and are responsible for proper
+        form, safe equipment, appropriate weights, collars where appropriate, safety arms or pins, a qualified
+        spotter, and a safe training environment.
+      </p>
 
-<h2>4. Prohibited Uses</h2>
-<p>
-  You agree not to:
-</p>
-<ul>
-  <li>Use the app in a way that endangers yourself or others</li>
-  <li>Use the app as a substitute for medical care or professional coaching</li>
-  <li>Upload, share, or display illegal, harmful, abusive, or misleading content</li>
-  <li>Attempt to manipulate leaderboards, ranks, packs, rewards, or scores</li>
-  <li>Reverse engineer, copy, modify, resell, or exploit the app except where legally allowed</li>
-  <li>Interfere with the app, servers, platform services, or other users</li>
-  <li>Use another person's information without permission</li>
-</ul>
+      <h2>3. No Guarantee of Accuracy</h2>
+      <p>
+        Rep counts, speed, tilt, balance feedback, form feedback, ranks, scores, and estimated one-repetition maximum
+        values are estimates and may be inaccurate, delayed, incomplete, or unavailable. Users must not rely solely
+        on the app for safety, medical, training, or competition decisions.
+      </p>
 
-<h2>5. Accounts, Usernames, Leaderboards, and Public Features</h2>
-<p>
-  If the app includes usernames, ranks, leaderboards, public stats, or competitive features, you are responsible for
-  the information you choose to display. Do not use sensitive personal information as your username.
-</p>
-<p>
-  We may remove, hide, reset, or modify leaderboard entries, usernames, scores, or other content if we believe they
-  are abusive, fraudulent, offensive, unsafe, misleading, unlawful, or harmful to the app experience.
-</p>
+      <h2>4. User Responsibility</h2>
+      <p>
+        Users are responsible for using the app safely and lawfully, protecting their device and equipment,
+        obtaining consent before capturing another person, choosing appropriate training intensity, stopping when
+        conditions become unsafe, and protecting their display name and Apple Account.
+      </p>
 
-<h2>6. Subscriptions, Trials, and Paid Features</h2>
-<p>
-  BenchPress AI may offer free trials, subscriptions, or paid features. Prices, trial periods, and available features
-  may vary by region and may change over time.
-</p>
-<p>
-  Payments are processed through the Apple App Store. Subscriptions automatically renew unless canceled according to
-  Apple's subscription rules. You can manage or cancel subscriptions in your Apple ID account settings.
-</p>
-<p>
-  Refunds are handled by Apple according to App Store policies. We do not control Apple's billing, refund, or payment
-  systems.
-</p>
+      <h2>5. Prohibited Uses</h2>
+      <p>
+        Users may not endanger themselves or others, misuse public features, manipulate leaderboards or access
+        systems, interfere with the app or Apple services, use another person's information without permission, or
+        reverse engineer or exploit the app except where applicable law permits.
+      </p>
 
-<h2>7. App Changes and Availability</h2>
-<p>
-  We may modify, update, suspend, remove, or discontinue any part of the app at any time, including features, scores,
-  rewards, packs, cards, ranks, leaderboards, subscriptions, or tracking systems. We may also limit access to features
-  for maintenance, technical, legal, security, or business reasons.
-</p>
+      <h2>6. Public Leaderboard</h2>
+      <p>
+        Users choose the display name used on the public leaderboard. Do not use sensitive personal information.
+        Objectionable, fraudulent, unsafe, or unlawful names or entries may be removed or restricted. Reports may be
+        sent through the in-app reporting option or to
+        <a href="mailto:etavakoli818@gmail.com">etavakoli818@gmail.com</a>.
+      </p>
 
-<h2>8. Intellectual Property</h2>
-<p>
-  BenchPress AI, including its design, branding, software, graphics, icons, features, text, and other content, is
-  owned by us or our licensors and is protected by intellectual property laws. You receive a limited, personal,
-  non-transferable, revocable license to use the app for your own lawful personal use.
-</p>
+      <h2>7. Subscriptions, Trials, and Paid Features</h2>
+      <p>
+        BenchPress AI may offer auto-renewable monthly or yearly subscriptions, introductory trials, and limited
+        one-time sample access. The title, duration, localized price, trial or sample eligibility, and renewal terms
+        are shown before purchase or activation.
+      </p>
+      <p>
+        Payment is charged through the user's Apple Account. Subscriptions renew automatically unless canceled under
+        Apple's subscription rules. Users can manage or cancel subscriptions through Apple Account settings. Apple
+        handles billing and refund requests under App Store policies.
+      </p>
 
-<h2>9. No Warranties</h2>
-<p>
-  To the maximum extent permitted by law, BenchPress AI is provided "as is" and "as available" without warranties of
-  any kind, whether express, implied, or statutory. We do not warrant that the app will be accurate, safe, complete,
-  uninterrupted, error-free, secure, or suitable for your goals.
-</p>
+      <h2>8. Optional Apple iCloud and CloudKit</h2>
+      <p>
+        iCloud features are optional. Before CloudKit sharing begins, the app identifies the data involved and asks
+        for explicit permission. Users who continue without iCloud can use local workout features, but CloudKit
+        history sync and the public leaderboard are disabled.
+      </p>
 
-<h2>10. Limitation of Liability</h2>
-<p>
-  To the maximum extent permitted by law, we will not be liable for any indirect, incidental, special, consequential,
-  exemplary, or punitive damages, or for any loss of profits, data, goodwill, physical condition, training progress,
-  business opportunity, or other intangible losses arising out of or related to your use of the app.
-</p>
-<p>
-  To the maximum extent permitted by law, you agree that we are not responsible for injuries, accidents, equipment
-  failure, unsafe lifting, incorrect form, training decisions, inaccurate app outputs, missed rep detections,
-  incorrect estimates, or any harm resulting from your use of or reliance on BenchPress AI.
-</p>
+      <h2>9. App Changes and Availability</h2>
+      <p>
+        Features may be modified, updated, suspended, limited, or discontinued for technical, legal, security,
+        maintenance, or business reasons.
+      </p>
 
-<h2>11. Indemnification</h2>
-<p>
-  To the maximum extent permitted by law, you agree to defend, indemnify, and hold harmless BenchPress AI, its owner,
-  developers, affiliates, service providers, and partners from any claims, damages, losses, liabilities, costs, and
-  expenses arising from your use of the app, your violation of these Terms, your violation of law, your workout
-  activity, your equipment setup, or your violation of another person's rights.
-</p>
+      <h2>10. Intellectual Property</h2>
+      <p>
+        BenchPress AI software, design, branding, graphics, text, and features are owned by the developer or
+        licensors and are protected by applicable intellectual-property laws. Users receive a limited, personal,
+        non-transferable, revocable license for lawful personal use.
+      </p>
 
-<h2>12. Apple App Store Terms</h2>
-<p>
-  If you downloaded the app from the Apple App Store, your use of the app is also subject to Apple's applicable App
-  Store terms, Apple Media Services Terms and Conditions, and any applicable Apple standard licensed application end
-  user license agreement. Apple is not responsible for providing support or maintenance for BenchPress AI unless
-  required by applicable law.
-</p>
+      <h2>11. No Warranties</h2>
+      <p>
+        To the maximum extent permitted by law, the app is provided "as is" and "as available" without warranties
+        of accuracy, safety, completeness, uninterrupted operation, security, merchantability, fitness for a
+        particular purpose, or non-infringement.
+      </p>
 
-<h2>13. Termination</h2>
-<p>
-  We may suspend or terminate access to the app or certain features if we believe you violated these Terms, misused
-  the app, manipulated app systems, created risk for others, or used the app unlawfully. You may stop using the app at
-  any time.
-</p>
+      <h2>12. Limitation of Liability</h2>
+      <p>
+        To the maximum extent permitted by law, the developer is not liable for indirect, incidental, special,
+        consequential, exemplary, or punitive damages; lost profits or data; or injuries, accidents, unsafe lifting,
+        equipment failure, incorrect form, inaccurate outputs, or training decisions arising from use of the app.
+        Rights that cannot legally be excluded remain unaffected.
+      </p>
 
-<h2>14. Governing Law</h2>
-<p>
-  These Terms are governed by the laws applicable in the location where the app owner operates, without regard to
-  conflict of law principles, unless consumer protection laws in your jurisdiction require otherwise.
-</p>
+      <h2>13. Indemnification</h2>
+      <p>
+        To the maximum extent permitted by law, users agree to indemnify and hold harmless the developer and service
+        providers from claims, losses, or expenses arising from unlawful use, violation of these Terms, unsafe
+        workout activity, or violation of another person's rights.
+      </p>
 
-<h2>15. Changes to These Terms</h2>
-<p>
-  We may update these Terms from time to time. Updates will be posted on this page with a new "Last updated" date.
-  Your continued use of the app after changes are posted means you accept the updated Terms, to the extent permitted
-  by law.
-</p>
+      <h2>14. Apple Standard EULA</h2>
+      <p>
+        Use of BenchPress AI is also governed by Apple's Standard Licensed Application End User License Agreement:
+      </p>
+      <p>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">
+          https://www.apple.com/legal/internet-services/itunes/dev/stdeula/
+        </a>
+      </p>
+      <p>
+        Apple is not responsible for maintaining or supporting BenchPress AI except as required by applicable law.
+        If these supplemental terms conflict with Apple's Standard EULA, Apple's Standard EULA controls to the extent
+        required by Apple's terms or applicable law.
+      </p>
 
-<h2>16. Contact</h2>
-<p>
-  For support, legal, privacy, or data requests, contact:
-  <a href="mailto:etavakoli818@gmail.com">etavakoli818@gmail.com</a>
-</p>
+      <h2>15. Termination</h2>
+      <p>
+        Access may be limited or terminated if a user violates these Terms, manipulates app systems, creates risk for
+        others, or uses the app unlawfully. Users may stop using the app at any time.
+      </p>
 
-<p class="small">
-  This page is provided for app support, transparency, privacy disclosure, and user terms. It is not legal advice.
-  For legal compliance specific to your business, jurisdiction, and app features, consult a qualified lawyer.
-</p>
-```
+      <h2>16. Governing Law</h2>
+      <p>
+        These Terms are governed by the laws of Ontario, Canada, subject to mandatory consumer-protection rights and
+        conflict-of-law rules that cannot legally be excluded.
+      </p>
 
-  </div>
+      <h2>17. Changes to These Terms</h2>
+      <p>
+        These Terms may be updated from time to time. Material changes may be presented for renewed acceptance. The
+        updated date at the top identifies the current version.
+      </p>
+
+      <h2>18. Contact</h2>
+      <p>
+        For support, legal, privacy, or data requests, contact
+        <a href="mailto:etavakoli818@gmail.com">etavakoli818@gmail.com</a>.
+      </p>
+    </section>
+
+    <footer class="footer">
+      <p class="small">
+        This page is provided for support and transparency and is not legal advice. Obtain advice from a qualified
+        lawyer for compliance specific to the business, jurisdiction, and app features.
+      </p>
+      <div class="legal-links">
+        <a href="#privacy">Privacy Policy</a>
+        <a href="#terms">Terms &amp; Conditions</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple Standard EULA</a>
+        <a href="mailto:etavakoli818@gmail.com">Contact Support</a>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
